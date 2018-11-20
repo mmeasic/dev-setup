@@ -7,13 +7,26 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias pycode="cd ~/code/dev/python"
+alias cust="cd ~/code/db/customers"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
+
+# Maven build shortcuts
+alias mvnci="mvn clean install -U"
+
+# Put the current working directory on clipboard
+alias cpwd="pwd | tr -d '\n' | pbcopy"
+
+# Strands SSH shortcuts
+alias dev="ssh oracle@oradev12.spf.strands.com"
+alias pre="ssh oracle@orapre12.spf.strands.com"
+alias perf="ssh oracle@perfdb1.spf.strands.com"
+alias perf3="ssh oracle@perfdb3.strands.com"
+alias deliveries="ssh spf@deliveries.strands.com"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

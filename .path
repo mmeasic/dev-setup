@@ -1,0 +1,8 @@
+# Oracle home definition
+export ORACLE_HOME=/Applications/oracle/product/instantclient_64/12.1
+# Add ORACLE_HOME to the PATH
+export PATH=$ORACLE_HOME/bin:/usr/local/bin:$PATH
+
+# Other Oracle variables
+export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib
+export TNS_ADMIN=$ORACLE_HOME/network/admin
