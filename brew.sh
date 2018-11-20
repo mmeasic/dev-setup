@@ -136,6 +136,7 @@ brew cask install --appdir="/Applications" sublime-text
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
+brew cask install --appdir="/Applications" spectacle
 
 # Remove outdated versions from the cellar.
 brew cleanup

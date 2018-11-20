@@ -1680,6 +1680,27 @@ If you installed the elasticsearch-head plugin, you can visit its interface at `
 
 Elasticsearch's [documentation](http://www.elasticsearch.org/guide/) is more of a reference. To get started, I suggest reading some of the blog posts linked on this [StackOverflow answer](http://stackoverflow.com/questions/11593035/beginners-guide-to-elasticsearch/11767610#11767610).
 
+### Oracle Client (not finished)
+
+#### Installation
+
+Due to the Oracle's license agreement the [datastores.sh script](#datastoressh-script) does not install Oracle's client. If you prefer to install it separately, check out the following discussion.
+
+In order to download necessary files, open the following [page](https://www.oracle.com/technetwork/topics/intel-macsoft-096467.html), accept the License Agreement and download following files:
+
+[Oracle Client 11.2.0.4.0 (64-bit)](http://download.oracle.com/otn/mac/instantclient/11204/instantclient-basic-macos.x64-11.2.0.4.0.zip)
+[Oracle SQLPlus Version 11.2.0.4.0 (64-bit)](http://download.oracle.com/otn/mac/instantclient/11204/instantclient-sqlplus-macos.x64-11.2.0.4.0.zip)
+
+Move the downloaded files:
+
+    $ mv instantclient*.zip ~/Library/Caches/Homebrew
+
+Run the following commands:
+    
+    $ brew tap InstantClientTap/instantclient
+    $ brew install instantclient-basic
+    $ brew install instantclient-sqlplus
+
 ## Section 6: Web Development
 
 ### Node.js
