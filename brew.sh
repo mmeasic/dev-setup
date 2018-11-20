@@ -63,10 +63,9 @@ grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
+brew install grep
+brew install openssh
+brew install screen
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -97,7 +96,6 @@ brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
-brew install homebrew/x11/xpdf
 brew install xz
 
 # Install other useful binaries.

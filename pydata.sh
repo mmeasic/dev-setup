@@ -63,8 +63,6 @@ pip install "ipython[all]"
 pip install bokeh
 pip install Flask
 pip install sqlalchemy
-pip install mysql-python
-pip install tensorflow
 
 ###############################################################################
 # Python 3 Virtual Enviroment                                                 #
@@ -91,9 +89,6 @@ pip install "ipython[all]"
 pip install bokeh
 pip install Flask
 pip install sqlalchemy
-#pip install mysql-python  # Python 2 only, use mysqlclient instead
-pip install mysqlclient
-pip install tensorflow
 
 ###############################################################################
 # Install IPython Profile
