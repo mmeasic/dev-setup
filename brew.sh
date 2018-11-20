@@ -55,6 +55,7 @@ brew install narwhal
 # Install Python
 brew install python3
 sudo ln -s -f /usr/local/bin/python3 /usr/local/bin/python
+sudo ln -s -f /usr/local/bin/pip3 /usr/local/bin/pip
 
 # Install ruby-build and rbenv
 brew install ruby-build
