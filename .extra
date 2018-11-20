@@ -1,0 +1,3 @@
+# Added for Python's virtual environments
+source "/usr/local/bin/virtualenvwrapper.sh"
+export WORKON_HOME=$HOME/.virtualenvs

@@ -17,7 +17,6 @@ Thumbs.db
 .Trashes
 
 # Files that contain credentials or personal info
-.extra
 .boto
 .mrjob.conf
 .s3cfg
