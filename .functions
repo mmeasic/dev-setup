@@ -234,3 +234,13 @@ function o() {
 function tre() {
     tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# `cr-nous-data` with an argument creates the predefined structure in the current
+# opens the given location
+function create-ndata() {
+    if [ ! $# -eq 1 ]; then
+        echo "provide only a directory name";
+    else
+        mkdir -p "$@"/{raw,interim,processed,external};
+    fi;
+}
