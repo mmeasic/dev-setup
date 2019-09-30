@@ -1,6 +1,9 @@
 # Added for Python's virtual environments
-source "/usr/local/bin/virtualenvwrapper.sh"
 export WORKON_HOME=$HOME/.virtualenvs
+
+# Project home path for virtualenvwrapper, added by pydata.sh
+export PROJECT_HOME=~/code/dev/python
+source "/usr/local/bin/virtualenvwrapper.sh"
 
 # Git credentials
 GIT_AUTHOR_NAME="Mario Measic"
