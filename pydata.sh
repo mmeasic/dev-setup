@@ -121,7 +121,25 @@ jupyter nbextension enable execute_time/ExecuteTime
 # GistIt
 jupyter nbextension enable gist_it/main
 
+# Setup the default Jupyter notebook template
+NB_DIR1=$(pip show jupyter_contrib_nbextensions | grep Location | cut -d ' ' -f 2)
+NB_DIR2=$(sed "s/-/_/g" <<< $(pip show jupyter_contrib_nbextensions | grep Name | cut -d ' ' -f 2))
+NB_DIR3=$(echo "nbextensions")
+NB_NEW=$(echo "setup")
+NB_PATH=$NB_DIR1/$NB_DIR2/$NB_DIR3/$NB_NEW
+
+mkdir -p $NB_PATH
+cd $NB_PATH
+
+wget https://raw.githubusercontent.com/mmeasic/jupyter-template/master/main.js
+wget https://raw.githubusercontent.com/mmeasic/jupyter-template/master/setup.yaml
+
+# Add the new extension
+jupyter contrib nbextension install
+
+# Template
+jupyter nbextension enable setup/main
+
 echo "------------------------------"
 echo "Script completed."
-echo "Usage: workon py2-data for Python2"
 echo "Usage: workon py3-data for Python3"
