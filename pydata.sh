@@ -133,6 +133,7 @@ cd $NB_PATH
 
 wget https://raw.githubusercontent.com/mmeasic/jupyter-template/master/main.js
 wget https://raw.githubusercontent.com/mmeasic/jupyter-template/master/setup.yaml
+wget https://raw.githubusercontent.com/mmeasic/jupyter-template/master/README.md
 
 # Add the new extension
 jupyter contrib nbextension install
