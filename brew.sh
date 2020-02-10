@@ -52,6 +52,9 @@ brew install wget --with-iri
 brew install ringojs
 brew install narwhal
 
+# Install ssconvert to convert between variety of spreadsheet formats
+brew install gnumeric
+
 # Install Python
 brew install python3
 sudo ln -s -f /usr/local/bin/python3 /usr/local/bin/python
