@@ -37,13 +37,13 @@ echo "export WORKON_HOME=~/.virtualenvs" >> $EXTRA_PATH
 echo "" >> $EXTRA_PATH
 
 # Setup the Python dev path
-DEV_PATH=~/code/dev/python
+DEV_PATH=~/Code/python
 mkdir -p DEV_PATH
 echo $DEV_PATH
 echo "" >> $EXTRA_PATH
 echo "" >> $EXTRA_PATH
 echo "# Project home path for virtualenvwrapper, added by pydata.sh" >> $EXTRA_PATH
-echo "export PROJECT_HOME=~/code/dev/python" >> $EXTRA_PATH
+echo "export PROJECT_HOME=~/Code/python" >> $EXTRA_PATH
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> $EXTRA_PATH
 echo "" >> $EXTRA_PATH
 source $EXTRA_PATH
