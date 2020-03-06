@@ -25,9 +25,6 @@ alias pip="pip3"
 # Put the current working directory on clipboard
 alias cpwd="pwd | tr -d '\n' | pbcopy"
 
-# Strands SSH shortcuts
-alias hw="ssh airflow@hortonworks.strands.com"
-
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
     colorflag="--color"
