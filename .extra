@@ -2,7 +2,6 @@
 export WORKON_HOME=$HOME/.virtualenvs
 
 # Project home path for virtualenvwrapper, added by pydata.sh
-export PROJECT_HOME=~/code/dev/python
 source "/usr/local/bin/virtualenvwrapper.sh"
 
 # Git credentials
