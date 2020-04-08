@@ -75,6 +75,7 @@ pip install Flask
 pip install sqlalchemy
 pip install cookiecutter
 pip install jupyter_contrib_nbextensions
+pip install autopep8
 
 # Setting up the cookiecutter DS template
 COOKIE_GITHUB=https://github.com/mmeasic/cookiecutter-data-science
