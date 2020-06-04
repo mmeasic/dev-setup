@@ -15,6 +15,7 @@ alias j="jobs"
 alias cl="clear"
 alias gs="git status"
 alias gac="git add -A && git commit"
+alias gc="git checkout"
 
 # Maven build shortcuts
 alias mvnci="mvn clean install -U"
